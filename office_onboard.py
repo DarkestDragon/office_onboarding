@@ -11,7 +11,6 @@ def on_msg(*params):
 	global answers
 	global greets
 	user_message = params[0].message.textMessage.text.lower()
-	user_id = get_user_peer_by_id(params[0].sender_uid)
 	if '/start' == user_message:#if user creates a dialog with the bot
 		bot.messaging.send_message(params[0].peer, greets[1])
 		sleep(12)
