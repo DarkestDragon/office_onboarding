@@ -44,7 +44,7 @@ if __name__ == "__main__":
 	bot = DialogBot.get_secure_bot(
 		"hackathon-mob.transmit.im",
 		grpc.ssl_channel_credentials(),
-		"85cb244e4f9217308ae4f131c789a495d409dac0"
+		"TOKEN"
 	)
 	with open("./greets.txt", "r") as greet_file:
 		greets = greet_file.read().split(';')
